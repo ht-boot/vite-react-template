@@ -40,7 +40,7 @@ const getUserList = () => {
 // thunk函数允许执行异步逻辑, 通常用于发出异步请求。
 // createAsyncThunk 创建一个异步action，方法触发的时候会有三种状态：
 // pending（进行中）、fulfilled（成功）、rejected（失败）
-export const getUserListThunk = createAsyncThunk(
+export const getUserListThunk: any = createAsyncThunk(
   "system/getUserList",
   async () => {
     const res = await getUserList();
